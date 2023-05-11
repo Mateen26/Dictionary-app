@@ -4,7 +4,7 @@ export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState('light');
-  const [font, setFont] = useState('serif');
+  const [font, setFont] = useState('seriff');
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';

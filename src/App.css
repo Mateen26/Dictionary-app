@@ -50,3 +50,14 @@
   background-color: #eeeeee;
   color: #121212;
 }
+
+.sanss {
+font-family: sans-serif;
+}
+
+.seriff {
+font-family: serif;
+}
+.monox {
+  font-family: 'Courier New', Courier, monospace;
+}

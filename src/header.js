@@ -28,9 +28,9 @@ const Header = () => {
               <path fill="#333" d="M.404 36.771C-3.302 30.173 3.628 24 9.854 24h392.291c6.225 0 13.156 6.173 9.449 12.771L217.557 207.23c-4.276 6.45-11.206 6.45-15.483 0L.404 36.771z" />
             </svg>
             <select onChange={handleFontChange} className={`w-full sm:w-56 appearance-none py-2 pl-4 pr-8 rounded-lg bg-white border border-gray-400 text-gray-700 leading-tight focus:outline-none focus:border-blue-500 ${theme === 'dark' ? 'dark' : 'light'}`}>
-              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="serif">Serif</option>
-              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="mono">Monospace</option>
-              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="sans">Sans-serif</option>
+              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="seriff">Serif</option>
+              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="monox">Monospace</option>
+              <option className={`bg-white ${theme === 'dark' ? 'dark:bg-gray-600' : 'dark:bg-gray-300'}  hover:bg-blue-500 hover:text-white`} value="sanss">Sans-serif</option>
             </select>
           </div>
 

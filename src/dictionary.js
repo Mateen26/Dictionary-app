@@ -63,7 +63,7 @@ const Dictionary = () => {
 
         {data ? (
           <div
-            className={`w-full font-${font} antialiased  max-w-3xl mx-auto rounded-lg shadow-2xl overflow-hidden mt-5 ${animate ? "animate__animated animate__fadeIn" : ""
+            className={`w-full ${font} antialiased  max-w-3xl mx-auto rounded-lg shadow-2xl overflow-hidden mt-5 ${animate ? "animate__animated animate__fadeIn" : ""
               }`}
             onAnimationEnd={() => setAnimate(false)}
           >
