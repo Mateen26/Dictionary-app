@@ -1,3 +1,26 @@
+### `Description:`
+
+The Dictionary Project is a web application that allows users to search for word definitions. It leverages the power of React and Tailwind CSS to provide a user-friendly and responsive dictionary experience.
+
+### `Features:`
+
+Word Definitions: Users can enter a word and instantly retrieve its definition from a reliable dictionary API.
+Theme Switcher: Users can toggle between dark and light themes to customize the visual appearance of the application.
+Font Selector: Users have the ability to switch between serif, sans-serif, and monospace fonts to personalize their reading experience.
+
+### `Technologies Used:`
+
+React: The application is built using the React JavaScript library, providing a modular and efficient component-based structure.
+Tailwind CSS: Tailwind CSS is used for styling the user interface, providing a utility-first approach and enabling rapid development.
+External APIs: The project integrates with an external dictionary API for word definitions.
+How It Works:
+
+User Interface: The application consists of multiple components, such as the Header, Dictionary, and ThemeContextProvider, which are responsible for different functionalities and user interactions.
+Word Definitions: When a user enters a word in the search input, the application sends a request to the dictionary API, retrieves the definition, and displays it on the screen.
+Theme Switching: The theme switcher component updates the application's theme based on user interaction. It toggles between dark and light themes, adjusting the colors and styling accordingly.
+Font Selection: The font selector component allows users to choose between serif, sans-serif, and monospace fonts. When a font is selected, the application updates the font style across relevant components.
+The Dictionary Project provides a seamless and intuitive way to explore word definitions, offering users a rich and customizable dictionary experience.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
