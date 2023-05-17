@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Dictionary-app/static/css/main.90bd006a.css",
-    "main.js": "/Dictionary-app/static/js/main.af9eab4f.js",
+    "main.js": "/Dictionary-app/static/js/main.d4ba8f3d.js",
     "static/js/787.b2458070.chunk.js": "/Dictionary-app/static/js/787.b2458070.chunk.js",
     "static/media/pale_moon_browser_logo_icon_152969.ico": "/Dictionary-app/static/media/pale_moon_browser_logo_icon_152969.950fac763524af28dd68.ico",
     "static/media/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.ico": "/Dictionary-app/static/media/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.bea893d1ab35188faf22.ico",
     "index.html": "/Dictionary-app/index.html",
     "main.90bd006a.css.map": "/Dictionary-app/static/css/main.90bd006a.css.map",
-    "main.af9eab4f.js.map": "/Dictionary-app/static/js/main.af9eab4f.js.map",
+    "main.d4ba8f3d.js.map": "/Dictionary-app/static/js/main.d4ba8f3d.js.map",
     "787.b2458070.chunk.js.map": "/Dictionary-app/static/js/787.b2458070.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90bd006a.css",
-    "static/js/main.af9eab4f.js"
+    "static/js/main.d4ba8f3d.js"
   ]
 }
