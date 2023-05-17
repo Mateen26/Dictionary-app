@@ -14,7 +14,6 @@ const Dictionary = () => {
   const handlesubmit = (e) => {
     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
       .then((response) => {
-        console.log('response: ', response);
         setData(response.data);
         setAnimate(true);
       })
@@ -72,32 +71,42 @@ const Dictionary = () => {
                 {data && data?.[0]?.word.charAt(0).toUpperCase() + data?.[0]?.word.slice(1) || 'Word'}
               </h3>
 
-              {data?.[0]?.meanings.map((meaning, index) => (
-                <div key={index}>
-                  <p className="text-3xl font-medium text-gray-700 mb-5 mt-5">
-                    {meaning.partOfSpeech.charAt(0).toUpperCase() + meaning.partOfSpeech.slice(1)}
-                    <h3 className="text-lg font-medium text-gray-500">
-                      Meaning
-                    </h3>
-                  </p>
+              {data?.map((e, index) => (
+                <>
+                  <div key={index}>
+                    {e?.meanings?.map((e, index) => (
+                      <>
+                        <p className="text-3xl font-medium text-gray-700 mb-5 mt-5">
+                          {e.partOfSpeech.charAt(0).toUpperCase() + e.partOfSpeech.slice(1)}
+                        </p>
+                        <h3 className="text-lg font-medium text-gray-500">
+                          Meaning
+                        </h3>
 
-                  {meaning.definitions.map((definition, index) => (
-                    <p className="text-sm font-medium text-gray-500 ml-4" key={index}>
-                      {index + 1}. {definition.definition}
-                    </p>
-                  ))}
-                </div>
+                        {e.definitions.map((e, index) => (
+                          <p className="text-sm font-medium text-gray-500 ml-4" key={index}>
+                            {index + 1}. {e.definition}
+                          </p>
+                        ))}
+
+                      </>
+                    ))}
+                  </div>
+                </>
               ))}
             </div>
             <div className={`bg-white py-4 px-6 ${theme === "dark" ? "dark" : "light"}`}>
               <div className="flex items-center justify-between">
                 {data?.[0]?.phonetics.map(({ text, audio }, index) => (
+
                   <Fragment key={index}>
                     {audio && (
                       <audio className="inline-block" src={audio} controls />
                     )}
                   </Fragment>
+
                 ))}
+
               </div>
               <div className="flex justify-between mt-4">
                 <div className="flex-1">
@@ -105,14 +114,18 @@ const Dictionary = () => {
                     Synonyms
                   </p>
                   <ul className="mt-1">
-                    {data?.[0]?.meanings.map((meaning, index) => (
-                      <div key={index}>
-                        {meaning.synonyms && meaning.synonyms.map((synonyms, index) => (
-                          <li className="text-sm text-gray-900" key={index}>
-                            {index + 1}. {synonyms}
-                          </li>
+                    {data?.map((e, index) => (
+                      <>
+                        {e?.meanings.map((meaning, index) => (
+                          <div key={index}>
+                            {meaning.synonyms && meaning.synonyms.map((synonyms, index) => (
+                              <li className="text-sm text-gray-900" key={index}>
+                                {index + 1}. {synonyms}
+                              </li>
+                            ))}
+                          </div>
                         ))}
-                      </div>
+                      </>
                     ))}
                   </ul>
                 </div>
@@ -121,15 +134,19 @@ const Dictionary = () => {
                     Antonyms
                   </p>
                   <ul className="mt-1">
-                    {data?.[0]?.meanings.map((meaning, index) => (
-                      <div key={index}>
+                    {data?.map((e, index) => (
+                      <>
+                        {e?.meanings.map((meaning, index) => (
+                          <div key={index}>
 
-                        {meaning.antonyms && meaning.antonyms.map((antonyms, index) => (
-                          <p className="text-sm text-gray-900" key={index}>
-                            {index + 1}. {antonyms}
-                          </p>
+                            {meaning.antonyms && meaning.antonyms.map((antonyms, index) => (
+                              <p className="text-sm text-gray-900" key={index}>
+                                {index + 1}. {antonyms}
+                              </p>
+                            ))}
+                          </div>
                         ))}
-                      </div>
+                      </>
                     ))}
                   </ul>
                 </div>
