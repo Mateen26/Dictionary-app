@@ -1,0 +1,145 @@
+.my-hover-container {
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    animation: ease-in-out;
+  }
+  
+  .my-hover-wrapper {
+    padding: 10px;
+    border-radius: 9999px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+  
+  .w-con,
+  .e-con,
+  .l-con,
+  .c-con,
+  .o-con,
+  .m-con,
+  .n-con,
+  .r-con,
+  .y-con {
+    transform-style: preserve-3d;
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+  }
+  .w,
+  .e,
+  .l,
+  .c,
+  .o,
+  .m,
+  .e-2,
+  .n-2,
+  .r-2,
+  .y-2 {
+    transform-origin: top center;
+  }
+  .w-rev,
+  .e-rev,
+  .l-rev,
+  .c-rev,
+  .o-rev,
+  .m-rev,
+  .e-2-rev,
+  .n-2-rev,
+  .r-2-rev,
+  .y-2-rev {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: bottom center;
+    transform: rotatex(90deg);
+  }
+  
+  .my-hover-wrapper:hover {
+    transform: scale(1.1);
+    animation: ease-in-out;
+  }
+  @keyframes transform {
+    from {
+      transform: rotatex(0deg);
+    }
+    to {
+      transform: rotatex(90deg);
+    }
+  }
+  @keyframes transformbottom {
+    from {
+      transform: rotatex(90deg);
+    }
+    to {
+      transform: rotatex(0deg);
+    }
+  }
+  
+  .my-hover-wrapper:hover > .w-con .w,
+  .my-hover-wrapper:hover > .e-con .e,
+  .my-hover-wrapper:hover > .l-con .l,
+  .my-hover-wrapper:hover > .c-con .c,
+  .my-hover-wrapper:hover > .o-con .o,
+  .my-hover-wrapper:hover > .m-con .m,
+  .my-hover-wrapper:hover > .e-con .e-2,
+  .my-hover-wrapper:hover > .n-con .n-2,
+  .my-hover-wrapper:hover > .r-con .r-2,
+  .my-hover-wrapper:hover > .y-con .y-2 {
+    animation: transform 0.5s forwards;
+    animation-delay: 0ms;
+  }
+  
+  .my-hover-wrapper:hover > .w-con .w-rev,
+  .my-hover-wrapper:hover > .e-con .e-rev,
+  .my-hover-wrapper:hover > .l-con .l-rev,
+  .my-hover-wrapper:hover > .c-con .c-rev,
+  .my-hover-wrapper:hover > .o-con .o-rev,
+  .my-hover-wrapper:hover > .m-con .m-rev,
+  .my-hover-wrapper:hover > .e-con .e-2-rev,
+  .my-hover-wrapper:hover > .n-con .n-2-rev,
+  .my-hover-wrapper:hover > .r-con .r-2-rev,
+  .my-hover-wrapper:hover > .y-con .y-2-rev {
+    animation: transformbottom 0.5s forwards;
+    animation-delay: 0ms;
+  }
+  
+  .my-hover-wrapper:hover > .e-con .e-rev,
+  .my-hover-wrapper:hover > .e-con .e {
+    animation-delay: 40ms;
+  }
+  .my-hover-wrapper:hover > .l-con .l-rev,
+  .my-hover-wrapper:hover > .l-con .l {
+    animation-delay: 80ms;
+  }
+  .my-hover-wrapper:hover > .c-con .c-rev,
+  .my-hover-wrapper:hover > .c-con .c {
+    animation-delay: 120ms;
+  }
+  .my-hover-wrapper:hover > .o-con .o-rev,
+  .my-hover-wrapper:hover > .o-con .o {
+    animation-delay: 160ms;
+  }
+  .my-hover-wrapper:hover > .m-con .m-rev,
+  .my-hover-wrapper:hover > .m-con .m {
+    animation-delay: 200ms;
+  }
+  .my-hover-wrapper:hover > .e-con .e-2-rev,
+  .my-hover-wrapper:hover > .e-con .e-2 {
+    animation-delay: 240ms;
+  }
+  .my-hover-wrapper:hover > .n-con .n-2-rev,
+  .my-hover-wrapper:hover > .n-con .n-2 {
+    animation-delay: 280ms;
+  }
+  .my-hover-wrapper:hover > .r-con .r-2-rev,
+  .my-hover-wrapper:hover > .r-con .r-2 {
+    animation-delay: 320ms;
+  }
+  .my-hover-wrapper:hover > .y-con .y-2-rev,
+  .my-hover-wrapper:hover > .y-con .y-2 {
+    animation-delay: 360ms;
+  }
+  

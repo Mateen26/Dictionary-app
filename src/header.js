@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ThemeContext } from './context';
 import sun from './sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.ico'
 import moon from './pale_moon_browser_logo_icon_152969.ico'
+import "./Header.css"
 const Header = () => {
   const { theme, toggleTheme, changeFont } = useContext(ThemeContext);
 
@@ -18,7 +19,50 @@ const Header = () => {
           <path d="M18,2 C19.3807,2 20.5,3.11929 20.5,4.5 L20.5,18.75 C20.5,19.1642 20.1642,19.5 19.75,19.5 L5.5,19.5 C5.5,20.0523 5.94772,20.5 6.5,20.5 L19.75,20.5 C20.1642,20.5 20.5,20.8358 20.5,21.25 C20.5,21.6642 20.1642,22 19.75,22 L6.5,22 C5.11929,22 4,20.8807 4,19.5 L4,4.5 C4,3.11929 5.11929,2 6.5,2 L18,2 Z M18,3.5 L6.5,3.5 C5.94772,3.5 5.5,3.94772 5.5,4.5 L5.5,18 L19,18 L19,4.5 C19,3.94772 18.5523,3.5 18,3.5 Z M16,5 C16.5523,5 17,5.44772 17,6 L17,8 C17,8.55228 16.5523,9 16,9 L8,9 C7.44772,9 7,8.55228 7,8 L7,6 C7,5.44772 7.44772,5 8,5 L16,5 Z M15.5,6.5 L8.5,6.5 L8.5,7.5 L15.5,7.5 L15.5,6.5 Z" id="🎨-Color">
           </path>
         </svg>
-        <span className="ml-3 text-xl">Dictionary</span>
+        <div className="my-hover-container ">
+          <div className="my-hover-wrapper">
+            <div className="w-con">
+              <span className="w">D</span>
+              <span className="w-rev">D</span>
+            </div>
+            <div className="e-con">
+              <div className="e">i</div>
+              <div className="e-rev">i</div>
+            </div>
+            <div className="l-con">
+              <div className="l">c</div>
+              <div className="l-rev">c</div>
+            </div>
+            <div className="c-con">
+              <div className="c">t</div>
+              <div className="c-rev">t</div>
+            </div>
+            <div className="o-con">
+              <div className="o">i</div>
+              <div className="o-rev">i</div>
+            </div>
+            <div className="m-con">
+              <div className="m">o</div>
+              <div className="m-rev">o</div>
+            </div>
+            <div className="e-con">
+              <div className="e-2">n</div>
+              <div className="e-2-rev">n</div>
+            </div>
+            <div className="n-con">
+              <div className="n-2">a</div>
+              <div className="n-2-rev">a</div>
+            </div>
+            <div className="r-con">
+              <div className="r-2">r</div>
+              <div className="r-2-rev">r</div>
+            </div>
+            <div className="y-con">
+              <div className="y-2">y</div>
+              <div className="y-2-rev">y</div>
+            </div>
+          </div>
+        </div>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
         </nav>
 
